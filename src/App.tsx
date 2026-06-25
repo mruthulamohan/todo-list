@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// @ts-ignore: allow side-effect import of CSS in this TSX file
 import './App.css';
 import InputField from './components/InputField';
 import TodoList from './components/TodoList';

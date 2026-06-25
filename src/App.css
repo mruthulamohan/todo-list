@@ -82,3 +82,45 @@
   width: 90%;
   flex-wrap: wrap;
 }
+
+/* single todo.tsx */
+
+.todos__single {
+  display: flex;
+  justify-content: space-between;
+  background-color: #95bedf;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  margin-top: 20px;
+}
+
+.todos__single--text {
+  flex: 1;
+  padding: 5px;
+  font-size: 20px;
+  border: none; 
+}
+
+.todos__single--text:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .input {
+    width: 95%;
+  } 
+  .todos {
+    width: 95%;
+  }
+  .todos__single {
+    width: 100%;
+  }
+}

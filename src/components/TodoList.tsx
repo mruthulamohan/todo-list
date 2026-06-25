@@ -1,5 +1,7 @@
 import React from "react";
+// @ts-ignore: allow importing CSS without type declarations
 import '../App.css';
+import SingleTodo from "./SingleTodo";
 
 interface Props {
     todos: any[];
@@ -10,7 +12,7 @@ const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
     return (
         <div className="todos">
             {todos.map((todo) => (
-                <li key={todo.id}>{todo.todo}</li>
+                <SingleTodo key={todo.id} todo={todo} setTodos={setTodos} todos={todos} />
             ))}
         </div>
     );

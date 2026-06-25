@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+// @ts-ignore: Allow importing CSS without type declarations
 import '../App.css';
 
 interface Props {
