@@ -95,8 +95,14 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   width: 95%;
   margin-top: 20px;
+  gap: 15px;
+}
+
+.todos {
+  align-self: flex-start;
 }
 
 .remove {
@@ -119,7 +125,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #95bedf;
-  padding: 20px;
+  padding: 6px;
   border-radius: 5px;
   margin-top: 15px;
   transition: 0.2s;
